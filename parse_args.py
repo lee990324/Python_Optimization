@@ -33,6 +33,14 @@ def parse_args():
                         choices=DATASET_NAMES,
                         default=dataset_names,
                         help='Name of the dataset.')
+    parser.add_argument('--option2',
+                        type=str,
+                        default=option2,
+                        help='just test')
+    parser.add_argument('--input1',
+                        type=str,
+                        default='Hello World!',
+                        help='just test')
     parser.add_argument('--is_testing',type=bool,
                         default=is_testing,
                         help='Script in testing mode.')
