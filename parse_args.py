@@ -1,4 +1,9 @@
 import argparse
+import platform
+
+from dataset import DATASET_NAMES, dataset_info
+
+IS_LINUX = True if platform.system()=="Linux" else False
 
 def parse_args():
     """Parse command line arguments."""
